@@ -24,7 +24,7 @@ export default function WaitlistPage() {
           </div>
           <button
             type="button"
-            className="font-body text-sm font-medium text-[#03161c] leading-[1.44] hover:opacity-70 transition-opacity"
+            className="cursor-pointer font-body text-sm font-medium text-[#03161c] leading-[1.44] transition-colors hover:text-[#009eca]"
           >
             Log in
           </button>
@@ -42,7 +42,7 @@ export default function WaitlistPage() {
 
         <button
           type="button"
-          className="flex h-11 w-full items-center justify-center gap-3 rounded-[14px] border border-[rgba(82,82,84,0.1)] px-4 py-3 hover:bg-gray-50 transition-colors"
+          className="flex h-11 w-full cursor-pointer items-center justify-center gap-3 rounded-[14px] border border-[rgba(82,82,84,0.1)] bg-white px-4 py-3 transition-all duration-150 hover:border-[rgba(82,82,84,0.2)] hover:bg-[#f7f7f7] active:scale-[0.99]"
         >
           <img src={imgLogo} alt="" className="h-5 w-5 shrink-0" />
           <span className="font-body text-sm font-medium text-[#03161c] leading-[1.44]">
@@ -96,7 +96,7 @@ export default function WaitlistPage() {
 
           <button
             type="submit"
-            className="flex h-11 w-full items-center justify-center rounded-[14px] border border-[rgba(82,82,84,0.05)] bg-gradient-to-b from-[#c4f2ff] to-[#b2eeff] px-4 py-3 font-body text-sm font-semibold text-[#009eca] leading-[1.44] hover:from-[#b8ecff] hover:to-[#a6e8ff] transition-colors"
+            className="flex h-11 w-full cursor-pointer items-center justify-center rounded-[14px] border border-[rgba(82,82,84,0.05)] bg-gradient-to-b from-[#c4f2ff] to-[#b2eeff] px-4 py-3 font-body text-sm font-semibold text-[#009eca] leading-[1.44] transition-all duration-150 hover:border-[rgba(0,158,202,0.15)] hover:from-[#b0e8ff] hover:to-[#9ee4ff] hover:text-[#008bb5] active:scale-[0.99]"
           >
             Join the Waitlist
           </button>
@@ -108,11 +108,17 @@ export default function WaitlistPage() {
 
         <p className="font-body text-sm text-[rgba(3,22,28,0.5)] leading-[1.44]">
           By signing up, you agree to our{" "}
-          <a href="#" className="underline decoration-solid">
+          <a
+            href="#"
+            className="underline decoration-solid transition-colors hover:text-[#009eca]"
+          >
             Terms of Service
           </a>{" "}
           and{" "}
-          <a href="#" className="underline decoration-solid">
+          <a
+            href="#"
+            className="underline decoration-solid transition-colors hover:text-[#009eca]"
+          >
             Privacy Policy
           </a>
         </p>
